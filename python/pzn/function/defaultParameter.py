@@ -17,4 +17,5 @@ def sapa_nama(nama, sapaan="halo"):
 print("ini pemanggilan function tanpa mengisi default paramter akan hasilin halo sesuai default nilainya")
 sapa_nama("radit")
 
+print("ini pemanggilan function dengan ")
 sapa_nama("danu", "hi")
