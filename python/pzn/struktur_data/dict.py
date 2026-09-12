@@ -22,6 +22,10 @@ print("dict siswa nama : ", siswa["nama"])
 print("dict siswa kelas : ", siswa["kelas"])
 print("dict siswa umur : ", siswa["umur"])
 
+# nambah data pada dictionary
+siswa["hobi"] = "nonton"
+print(f"nambah hobi : {siswa}")
+
 # mengubah nilai
 siswa["kelas"] = 12
 print("perubahan pada kelas dari 9 jadi 12 : ", siswa["kelas"])
