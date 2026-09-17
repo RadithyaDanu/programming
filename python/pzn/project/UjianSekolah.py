@@ -76,8 +76,12 @@ def app_ujian():
 
         except ValueError:
             print("masukan input yg sesuai")
+
+    print("hasil ujian")
     print(f"jawaban benar = {jawaban_betul}")
     print(f"jawaban_salah = {jawaban_salah}")
+    print(
+        f"nilai anda = {jawaban_betul / (jawaban_betul + jawaban_salah) * 100:.2f}")
 
 
 app_ujian()
