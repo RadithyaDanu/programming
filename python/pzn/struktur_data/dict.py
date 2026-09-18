@@ -41,6 +41,7 @@ print("hapus key dan value kelas di dict", siswa)
 for key in siswa:
     print("iterasi dict siswa", key, ":", siswa[key])
 
+
 # iterasi key-value pairs
 # kalo pengen sekalian ambil key value, bisa begini
 # tapi di dictnya harus pake function bernama items()

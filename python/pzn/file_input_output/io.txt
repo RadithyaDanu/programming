@@ -1,0 +1,26 @@
+io adalah kemmapuan program kita dalam membaca data dan menuliskan data ke file
+misal kita buka word/excel, saat kita simpan data dokumennya bakal disimpen ke file
+dengan file io, kita bisa nyimpen data scr permanen ke file, baca data yg udah tersimpan, membuat laporan dalam bentuk file
+memproses data dari file eksternal, backup dan restore aplikasi
+
+# kita bsa pake function open(file, mode)
+# parameter file untuk lokasi filenya
+# modenya menentukan apakah ini mode baca, tulis, append atau yg lain
+# sssetelah menggunakan open, harus ditutup pake function close()
+# wajib ditutup, kalo ga ditutup bakal disimpen di memori python kita
+# bakal terjadi memory leak kalo ga gitu, apknya bakal bengkak kalo lupa nutup terutama lumayan besar
+
+# mode file
+# 1. r
+# untuk  baca file yg sudah ada, kalo gaada gabisa
+# 2. w
+# untuk menulis file baru, atau kalo filenya udah ada bakal nimpa file lama
+# 3. a
+# append, atau tambah, nambah data diakhir file, kalo datanya udah ada bakal nambah diakhir file
+# 4. x
+# create/buat, bikin file baru, kalo file udah ada bakal error
+
+# menulis ke file kita bisa pake function write(string)
+# file yang udah di close() gabisa ditulis lagi
+# misal kita open file trs tulis dan kalo udah di close gabisa ditulis lagi
+# harus open lagi untuk mengedit

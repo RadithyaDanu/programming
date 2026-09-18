@@ -1,0 +1,5 @@
+struktur data (data structure) adalah cara menyimpan dan mengorganisir data dalam program
+kita sejauh ini menyimpan 1 nilai dan menyimpannya di dalam 1 variabel
+sekarang kita menyimpan banyak nilai dalam 1 variabel
+
+1. list

@@ -3,8 +3,7 @@
 # mengacak posisi jawaban soal
 # hasil score murid
 
-
-# 1 membuka file soal
+# buka file soal
 def ambil_soal():
     soalUjian = []
     with open("bankSoal.txt", "r") as file:
@@ -17,8 +16,7 @@ def buat_soal():
     soalUjian = ambil_soal()
 
     import random
-    # acak soal
-    random.shuffle(soalUjian)
+    random.shuffle(soalUjian)  # acak soal
 
     soal_asli = []
 
@@ -44,7 +42,6 @@ def buat_soal():
             "semua_jawaban": jawaban,
             "jawaban_benar": jawaban_benar
         })
-
     return soal_asli
 
 

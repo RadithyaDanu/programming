@@ -1,0 +1,5 @@
+perulangan atau loop adalah cara untuk menjalankan kode secara berulang
+dapat menghemat waktu dan efisien waktu daripada mengulang code berkali kali
+
+contohnya ketika ingin mencetak hello world 100x
+perulangan jelas diunggulkan disini

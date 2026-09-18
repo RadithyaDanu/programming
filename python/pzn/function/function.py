@@ -4,13 +4,13 @@ def halo():
 
 
 halo()
-
+# contoh kalo function print gaakan mengembalikan value, jika ditaruh ke variabel, maka memberikan output none
 radit = halo()
 print(radit)
 
-# function dengan return
-# mengembalikan value, tidak akan lupa
 
+# function dengan return
+# mengembalikan value
 
 def hi():
     return "radithya danutirta9"

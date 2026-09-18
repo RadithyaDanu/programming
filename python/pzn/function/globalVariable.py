@@ -15,7 +15,10 @@ def ubah_nama():
     global nama_global
     nama_global = "danu"
 
+# jika pada function ubah_nama() tidak pake global nama_global
+# maka nama_global pada function tsb merupakan deklarasi variabel baru  di dala function tsb
+
 
 tampilkan_nama()  # bakal cetak radit
-ubah_nama()  # bakal cetak danu
-tampilkan_nama()
+ubah_nama()  # running function untuk ngubah value daria variabel global
+tampilkan_nama()  # bakal cetak danu

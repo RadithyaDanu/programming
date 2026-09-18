@@ -16,6 +16,7 @@ argumen("radit", 20, "bogor")
 print("ini penulisan keyword argumen pada function")
 # urutan bebas
 # sebutin paramternya lalu value
-argumen(umur=25, nama="radit")
+argumen(umur=25, kota="bogor", nama="radit")
 
 # bisa digabungkna dengan keyword biasa
+# jadi ya sama aja sih intinya

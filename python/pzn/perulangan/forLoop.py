@@ -12,5 +12,12 @@ for i in range(1, 5):
 for i in range(1, 10, 2):
     print(f"3perulangan ke-{i}")
 
+# kalo mau ngulang dari belakang bisa pake step negatif
+# range(start, stop, step) digunakan untuk menentukan jumlah perulangan
+# step negatif untuk mengulang dari belakang
+# stop harus lebih kecil dari start kalo step negatif
 for i in range(5, 0, -1):
     print(f"4perulangan ke-{i}")
+
+# stop disini berarti berhenti sebelum index stop yang ditentukan
+# jadi misal (1,6) berarti berhenti sebelum index 6

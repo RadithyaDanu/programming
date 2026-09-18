@@ -11,3 +11,4 @@ finally:
     print("program selesai")
 
 # finally akan selalu dijalanin baik ada error maupun gaada error
+# bisa dibilang penutup lah

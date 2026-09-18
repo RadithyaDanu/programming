@@ -6,4 +6,5 @@ def fungsi():
 
 
 fungsi()  # bakal cetak nilai x
-fungsi(x)
+fungsi(x)  # x merupakan variabel lokal yg hanya dideklarasikan di dalam function
+# gabakal bisa jalan krn variabel x itu bersifat lokal. harus decclare  variabel global x

@@ -3,7 +3,7 @@
 
 # and
 umur = int(input("masukin umur = "))
-sim = input("apakah punya sim? (y/n) = ")
+sim = input("apakah punya sim? (y/n) = ").lower()
 if umur >= 18 and sim == "y":
     print("boleh nyetir")
 else:

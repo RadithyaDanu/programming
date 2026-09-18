@@ -39,7 +39,4 @@ class Cat(Animal):
 
 myCat = Cat("Neko", 3, "Persian")
 print(myCat.deskripsi())
-
 print(myCat.suara())
-
-# TODO: Silakan buat kode Anda di bawah ini.

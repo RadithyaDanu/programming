@@ -19,4 +19,6 @@ def cetak_dict(**dict):
         print(key, ":", value)
 
 
+# saat manggil kita pake keyword argumen seperti ini (key value)
 cetak_dict(nama="radit", umur=20)
+# otomatis semuanya digabungin nanti jadi 1 dictionary

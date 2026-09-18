@@ -12,5 +12,7 @@ for line in file:
     data = line.strip().split(",")
     print(f"{data[0]} : {data[1]}")
 
+# strip() digunakan untuk emnghilangkan spasi di kanan atau kiri
+# split(",") digunakan untuk membuat tampilan seperti list, dipisahkan dengan koma
 file.close()
 print("cetak selesai")

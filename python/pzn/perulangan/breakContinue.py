@@ -16,6 +16,6 @@ while True:  # while true akan membuat perulangan tanpa henti, break digunakan u
 # continue
 # misal pengen cetak angka ganjil aja
 for i in range(20):
-    if i % 2 == 0:
-        continue
+    if i % 2 == 0:  # jika bilangan habis dibagi 0/genap
+        continue  # lewat, lanjut ke angka selanjutnya
     print(i)

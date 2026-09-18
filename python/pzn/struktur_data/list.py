@@ -5,6 +5,7 @@
 # list kosong
 daftar_kosong = []
 print(daftar_kosong)
+
 # list dengan angka
 angka = [1, 2, 3, 4, 5]
 print("angka", angka)
@@ -15,4 +16,4 @@ print("huruf", huruf)
 
 # list dengan value campuran
 campur = ["radit", 21, "hanvoen", 9999]
-print(campur)
+print("campur", campur)

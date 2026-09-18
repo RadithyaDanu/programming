@@ -1,0 +1,11 @@
+function merupakan  blok kode yang daapat digunakan berulang kali(kita gaperlu nulis kode yg sama berulan ulang)
+function membantu kita untuk menulis kode yang lebih terorganisir
+
+function dibuat dengan keyword 'def'diikuti dengan nama functionnya, dan diakhiri dengan ()
+    def contoh()
+biasanya nama function dibuat kayak nama variabel
+isi function harus ada indentation
+untuk manggil function tinggal manggil nama functionnya dengan ()
+    contoh()
+
+

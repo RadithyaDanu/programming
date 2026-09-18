@@ -10,3 +10,5 @@ try:
 
 except FileNotFoundError:
     print("file tidak ditemukan")
+
+# outputnya file tidak ditemukan

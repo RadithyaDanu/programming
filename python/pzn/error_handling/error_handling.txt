@@ -1,0 +1,6 @@
+error itu adalah kesalahan yang terjadi saat program berjalan
+ketika error terjadi,program akan otomatis berhenti dan menampilkan pesan error
+contoh error yang terjadi :
+1. syntax error
+kesalahan syntax.biasanya salah mengetik kode program. misal kurang kurung tutup.
+syntax error merupakan kesalahan penulisan yang tidak sesuai dengan aturan bahasa pemrograman 
