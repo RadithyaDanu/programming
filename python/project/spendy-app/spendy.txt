@@ -1,0 +1,485 @@
+# PROJECT: PROGRAM PENCATAT PENGELUARAN
+
+## TUJUAN PROJECT
+
+Membuat aplikasi sederhana menggunakan Python untuk mencatat dan mengelola pengeluaran.
+
+Project ini dibuat sebagai latihan setelah menyelesaikan materi Python sampai OOP.
+
+Fokus utama project:
+
+* Mengaplikasikan konsep Python yang sudah dipelajari.
+* Membiasakan diri membuat program dari nol.
+* Melatih problem solving dan struktur program.
+* Memahami penggunaan function, list, dictionary, OOP, file handling, dan error handling.
+* Mengenal alur sederhana software development.
+
+## SCOPE PROJECT
+
+Aplikasi memiliki fitur utama:
+
+1. Tambah pengeluaran
+2. Lihat semua pengeluaran
+3. Menghitung total pengeluaran
+4. Menghapus pengeluaran
+5. Keluar dari aplikasi
+
+Penyimpanan data menggunakan file JSON agar data tidak hilang ketika program ditutup.
+
+====================================
+PROJECT LIFECYCLE
+=================
+
+## PHASE 1 - PLANNING
+
+Tentukan kebutuhan dan fitur aplikasi sebelum mulai coding.
+
+Fitur minimum:
+
+1. Tambah Pengeluaran
+   User dapat memasukkan:
+
+   * Nama pengeluaran
+   * Kategori
+   * Jumlah uang
+
+2. Lihat Pengeluaran
+   Menampilkan seluruh pengeluaran yang telah dicatat.
+
+3. Hitung Total
+   Menghitung seluruh jumlah pengeluaran.
+
+4. Hapus Pengeluaran
+   User dapat menghapus pengeluaran tertentu.
+
+5. Keluar
+   Menghentikan aplikasi.
+
+Contoh menu:
+
+=== PENCATAT PENGELUARAN ===
+
+1. Tambah pengeluaran
+2. Lihat pengeluaran
+3. Total pengeluaran
+4. Hapus pengeluaran
+5. Keluar
+
+Pilih menu:
+
+CATATAN:
+Jangan menambahkan fitur terlalu banyak pada versi pertama.
+
+Tidak perlu:
+
+* Login
+* Database
+* GUI
+* API
+* Web
+* Authentication
+* Grafik
+* Sistem user
+
+====================================
+
+## PHASE 2 - DESIGN
+
+Tentukan bagaimana data akan direpresentasikan.
+
+Satu pengeluaran dapat memiliki data:
+
+{
+"nama": "Makan siang",
+"kategori": "Makanan",
+"jumlah": 25000
+}
+
+Banyak pengeluaran akan disimpan dalam sebuah list:
+
+pengeluaran = [
+{
+"nama": "Makan siang",
+"kategori": "Makanan",
+"jumlah": 25000
+},
+{
+"nama": "Bensin",
+"kategori": "Transportasi",
+"jumlah": 20000
+}
+]
+
+Konsep yang digunakan:
+
+LIST
+Untuk menyimpan banyak data pengeluaran.
+
+DICTIONARY
+Untuk menyimpan informasi dari satu pengeluaran.
+
+====================================
+
+## PHASE 3 - IMPLEMENTASI DASAR
+
+Mulai dengan struktur procedural terlebih dahulu.
+
+Buat beberapa function:
+
+* tambah_pengeluaran()
+* lihat_pengeluaran()
+* hitung_total()
+* hapus_pengeluaran()
+* app_menu()
+
+Tujuannya adalah memahami alur program terlebih dahulu.
+
+Jangan langsung menggunakan OOP.
+
+Pastikan versi dasar sudah dapat berjalan sebelum masuk ke tahap berikutnya.
+
+====================================
+
+## PHASE 4 - OOP
+
+Setelah versi dasar selesai, lakukan refactoring menggunakan OOP.
+
+Buat class:
+
+class Pengeluaran
+
+Class ini bertanggung jawab merepresentasikan satu pengeluaran.
+
+Contoh atribut:
+
+* nama
+* kategori
+* jumlah
+
+Kemudian buat class:
+
+class ExpenseManager
+
+Class ini bertanggung jawab mengelola kumpulan pengeluaran.
+
+Contoh tanggung jawab:
+
+* Menambahkan pengeluaran
+* Menampilkan pengeluaran
+* Menghitung total
+* Menghapus pengeluaran
+
+Tujuan tahap ini bukan sekadar menggunakan class.
+
+Pahami alasan kenapa data dan behavior tertentu dikelompokkan ke dalam sebuah class.
+
+====================================
+
+## PHASE 5 - FILE HANDLING
+
+Tambahkan penyimpanan permanen menggunakan JSON.
+
+Masalah yang ingin diselesaikan:
+
+Jika data hanya disimpan di dalam variable Python, data akan hilang ketika program ditutup.
+
+Solusinya:
+
+Python program
+|
+v
+expenses.json
+
+Ketika program dimulai:
+
+* Baca data dari JSON.
+* Masukkan data ke program.
+
+Ketika data berubah:
+
+* Simpan kembali data ke JSON.
+
+Contoh file:
+
+expenses.json
+
+[
+{
+"nama": "Makan siang",
+"kategori": "Makanan",
+"jumlah": 25000
+}
+]
+
+Konsep yang dipelajari:
+
+* Membuka file
+* Membaca file
+* Menulis file
+* JSON
+* Serialization / deserialization
+
+====================================
+
+## PHASE 6 - ERROR HANDLING
+
+Tambahkan validasi agar program tidak mudah crash ketika user memberikan input yang salah.
+
+Contoh:
+
+Jumlah: abc
+
+Program tidak boleh langsung crash.
+
+Gunakan:
+
+try:
+jumlah = int(input("Jumlah: "))
+except ValueError:
+print("Jumlah harus berupa angka.")
+
+Tambahkan juga validasi seperti:
+
+* Jumlah harus berupa angka.
+* Jumlah harus lebih dari 0.
+* Pilihan menu harus tersedia.
+* Pengeluaran yang ingin dihapus harus ada.
+
+Gunakan try-except hanya pada bagian yang memang berpotensi menghasilkan error.
+
+Gunakan continue jika input invalid harus mengulang proses.
+
+====================================
+
+## PHASE 7 - TESTING
+
+Setelah program selesai, lakukan pengujian secara manual.
+
+Test case minimum:
+
+1. Tambah satu pengeluaran
+   Expected:
+   Data berhasil ditambahkan.
+
+2. Tambah beberapa pengeluaran
+   Expected:
+   Semua data tersimpan.
+
+3. Hitung total
+   Expected:
+   Total sesuai dengan jumlah seluruh pengeluaran.
+
+4. Input jumlah berupa huruf
+   Expected:
+   Program menampilkan pesan error dan tidak crash.
+
+5. Input jumlah negatif
+   Expected:
+   Program menolak input.
+
+6. Hapus pengeluaran
+   Expected:
+   Data berhasil dihapus.
+
+7. Hapus data yang tidak ada
+   Expected:
+   Program memberikan pesan yang sesuai.
+
+8. Tutup program lalu jalankan kembali
+   Expected:
+   Data sebelumnya masih tersedia.
+
+====================================
+
+## PHASE 8 - REFACTORING
+
+Setelah program berhasil berjalan, periksa kembali kode.
+
+Perhatikan:
+
+* Apakah ada kode yang berulang?
+* Apakah function terlalu panjang?
+* Apakah nama variable sudah jelas?
+* Apakah nama function mudah dipahami?
+* Apakah class memiliki tanggung jawab yang jelas?
+* Apakah struktur program mudah dibaca?
+
+Tujuan:
+
+Mengubah kode dari sekadar "bisa jalan" menjadi kode yang lebih rapi dan mudah dipahami.
+
+====================================
+
+## PHASE 9 - DOCUMENTATION
+
+Buat README.md sederhana.
+
+Isi minimal:
+
+# Expense Tracker
+
+## Description
+
+Program sederhana untuk mencatat dan mengelola pengeluaran.
+
+## Features
+
+* Tambah pengeluaran
+* Lihat pengeluaran
+* Hitung total
+* Hapus pengeluaran
+* Penyimpanan JSON
+
+## Concepts
+
+* Function
+* List
+* Dictionary
+* OOP
+* File Handling
+* JSON
+* Exception Handling
+
+## How to Run
+
+Jelaskan cara menjalankan program.
+
+====================================
+
+## STRUKTUR PROJECT
+
+Versi awal:
+
+expense-tracker/
+|
+├── main.py
+├── expenses.json
+└── README.md
+
+Jangan membuat struktur terlalu kompleks pada awal project.
+
+Jika project sudah selesai dan memang diperlukan, struktur dapat dikembangkan.
+
+====================================
+URUTAN PENGERJAAN
+=================
+
+Ikuti urutan berikut:
+
+1. Buat requirement
+2. Tentukan struktur data
+3. Buat menu
+4. Buat fitur tambah pengeluaran
+5. Buat fitur lihat pengeluaran
+6. Buat fitur hitung total
+7. Buat fitur hapus pengeluaran
+8. Pastikan versi dasar berjalan
+9. Refactor menggunakan OOP
+10. Tambahkan JSON
+11. Tambahkan error handling
+12. Testing
+13. Debugging
+14. Refactoring
+15. Buat README
+16. Push ke GitHub
+
+====================================
+TARGET BELAJAR
+==============
+
+Project ini bukan ditujukan untuk membuat aplikasi yang kompleks.
+
+Target utama:
+
+"Saya bisa membuat program Python dari nol sampai selesai."
+
+Setelah project selesai, diharapkan sudah lebih terbiasa dengan:
+
+* Menentukan requirement sederhana
+* Merancang struktur data
+* Membuat function
+* Menggunakan list dan dictionary
+* Membuat class dan object
+* Menggunakan OOP dalam project nyata
+* Membaca dan menulis file
+* Menggunakan JSON
+* Menangani error
+* Melakukan testing
+* Melakukan debugging
+* Melakukan refactoring
+* Menggunakan Git dan GitHub
+
+## ESTIMASI WAKTU
+
+Target realistis: 7-12 jam total.
+
+Hari 1:
+Core functionality
+± 3-4 jam
+
+Hari 2:
+OOP + JSON
+± 3-4 jam
+
+Hari 3:
+Error handling + testing + README + Git
+± 2-3 jam
+
+## PRINSIP PENGERJAAN
+
+1. Jangan copy project dari tutorial.
+
+2. Kalau lupa syntax, cari dokumentasi atau referensi konsep.
+
+3. Kalau menemukan error, coba pahami penyebabnya sebelum mencari solusi.
+
+4. Jangan menambahkan fitur baru sebelum fitur utama selesai.
+
+5. Jangan mengejar kode yang sempurna dari awal.
+
+6. Prioritaskan program yang berjalan terlebih dahulu.
+
+7. Setelah berjalan, baru refactor.
+
+8. Jika stuck, pecah masalah menjadi bagian yang lebih kecil.
+
+## END GOAL
+
+Setelah project selesai:
+
+Python Fundamental
+|
+v
+Mini Project 1
+Tebak Angka
+|
+v
+Mini Project 2
+Expense Tracker
+|
+v
+Python siap digunakan sebagai
+tools untuk project Data Science
+
+## STATUS PROJECT
+
+[ ] Planning
+[ ] Design
+[ ] Basic implementation
+[ ] CRUD
+[ ] OOP
+[ ] JSON
+[ ] Error handling
+[ ] Testing
+[ ] Refactoring
+[ ] README
+[ ] GitHub
+
+Start:
+Besok
+
+Target:
+Selesaikan tanpa terburu-buru dan pahami setiap bagian yang dibuat.
+
+
+

@@ -17,33 +17,34 @@ siswa = {
     "asal": "bogor"
 }
 
-print(siswa)
-print("dict siswa nama : ", siswa["nama"])
-print("dict siswa kelas : ", siswa["kelas"])
-print("dict siswa umur : ", siswa["umur"])
+print(siswa())
+# print(siswa)
+# print("dict siswa nama : ", siswa["nama"])
+# print("dict siswa kelas : ", siswa["kelas"])
+# print("dict siswa umur : ", siswa["umur"])
 
-# nambah data pada dictionary
-siswa["hobi"] = "nonton"
-print(f"nambah hobi : {siswa}")
+# # nambah data pada dictionary
+# siswa["hobi"] = "nonton"
+# print(f"nambah hobi : {siswa}")
 
-# mengubah nilai
-siswa["kelas"] = 12
-print("perubahan pada kelas dari 9 jadi 12 : ", siswa["kelas"])
+# # mengubah nilai
+# siswa["kelas"] = 12
+# print("perubahan pada kelas dari 9 jadi 12 : ", siswa["kelas"])
 
-# menghapus key-value
-del siswa["kelas"]
-print("hapus key dan value kelas di dict", siswa)
+# # menghapus key-value
+# del siswa["kelas"]
+# print("hapus key dan value kelas di dict", siswa)
 
-# iterasi
-# iterasi ini ngambil keynya aja, sebenernya penamaan key diiterasi ini bisa bebas
-# jatohnya kayak for i in siswa.....
-# dan yg diambil cmn keynya aja
-for key in siswa:
-    print("iterasi dict siswa", key, ":", siswa[key])
+# # iterasi
+# # iterasi ini ngambil keynya aja, sebenernya penamaan key diiterasi ini bisa bebas
+# # jatohnya kayak for i in siswa.....
+# # dan yg diambil cmn keynya aja
+# for key in siswa:
+#     print("iterasi dict siswa", key, ":", siswa[key])
 
 
-# iterasi key-value pairs
-# kalo pengen sekalian ambil key value, bisa begini
-# tapi di dictnya harus pake function bernama items()
-for key, value in siswa.items():
-    print(key, "=", value)
+# # iterasi key-value pairs
+# # kalo pengen sekalian ambil key value, bisa begini
+# # tapi di dictnya harus pake function bernama items()
+# for key, value in siswa.items():
+#     print(key, "=", value)
