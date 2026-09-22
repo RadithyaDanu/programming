@@ -28,20 +28,27 @@ pengeluaran_user = []
 
 
 def tambah_pengeluaran():
+    try:
+        nama_pengeluaran = input("masukkan nama pengeluaran = ")
+        nama_kategori = input("masukkan nama kategori = ")
+        jumlah_uang = int(input("masukkan jumlah uang = "))
 
-    nama_pengeluaran = input("masukkan nama pengeluaran = ")
-    nama_kategori = input("masukkan nama kategori = ")
-    jumlah_uang = int(input("masukkan jumlah uang = "))
-
-    pengeluaran_user.append({
-        "pengeluaran": nama_pengeluaran,
-        "kategori": nama_kategori,
-        "jumlah_duit": jumlah_uang
-    })
+        pengeluaran_user.append({
+            "pengeluaran": nama_pengeluaran,
+            "kategori": nama_kategori,
+            "jumlah_duit": jumlah_uang
+        })
+    except ValueError:
+        print("masukkan input yang sesuai!")
 
 
 def lihat_pengeluaran():
-    for data in pengeluaran_semua:
+    data_user = pengeluaran_user
+    if not data_user:
+        print("belum ada data!")
+        return
+
+    for data in data_user:
         for key, value in data.items():
             print(f"{key} : {value}")
     print("=====================")
@@ -72,16 +79,21 @@ def hapus_data():
     for i in range(len(data)):
         hasil = f"{i + 1}. {data[i]['pengeluaran']}"
         print(hasil)
+    try:
+        user_input = int(input("masukkan data yang ingin dihapus = "))
+        index = user_input - 1
+        hapus = data.pop(index)
 
-    user_input = int(input("masukkan data yang ingin dihapus = "))
-    index = user_input - 1
-    hapus = data.pop(index)
+        print(f"{hapus['pengeluaran']} berhasil dihapus")
+        print(f"data sekarang :")
+        for i in range(len(data)):
+            hasil = f"{i + 1}. {data[i]['pengeluaran']}"
+            print(hasil)
 
-    print(f"{hapus['pengeluaran']} berhasil dihapus")
-    print(f"data sekarang :")
-    for i in range(len(data)):
-        hasil = f"{i + 1}. {data[i]['pengeluaran']}"
-        print(hasil)
+    except ValueError:
+        print("masukkan input yang sesuai!")
+    except IndexError:
+        print("data tidak ada!")
 
     # salah
     # for i in range(len(hasil)):
@@ -104,22 +116,24 @@ def app_menu():
         print("3. hitung total keseluruhan pengeluaran")
         print("4. hapus data")
         print("5. keluar")
+        try:
+            user_input = int(input("masukkan pilihan = "))
 
-        user_input = int(input("masukkan pilihan = "))
-
-        if user_input == 1:
-            tambah_pengeluaran()
-        elif user_input == 2:
-            lihat_pengeluaran()
-        elif user_input == 3:
-            hitung_total()
-        elif user_input == 4:
-            hapus_data()
-        elif user_input == 5:
-            print("selamat tinggal!")
-            break
-        else:
-            print("input tidak_valid!")
+            if user_input == 1:
+                tambah_pengeluaran()
+            elif user_input == 2:
+                lihat_pengeluaran()
+            elif user_input == 3:
+                hitung_total()
+            elif user_input == 4:
+                hapus_data()
+            elif user_input == 5:
+                print("selamat tinggal!")
+                break
+            else:
+                print("input tidak_valid!")
+        except ValueError:
+            print("masukkan input yang sesuai!")
 
 
 app_menu()
