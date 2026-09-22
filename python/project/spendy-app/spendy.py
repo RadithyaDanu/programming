@@ -38,15 +38,61 @@ def tambah_pengeluaran():
         "kategori": nama_kategori,
         "jumlah_duit": jumlah_uang
     })
-    return pengeluaran_user
 
 
 def lihat_pengeluaran():
-    pengeluaran_semua = pengeluaran_user
     for data in pengeluaran_semua:
         for key, value in data.items():
             print(f"{key} : {value}")
     print("=====================")
+
+
+def hitung_total():
+    jumlah = 0
+    # data = pengeluaran_user["jumlah_duit"] ((salah krn pengeluaran user itu list, gabisa akses kyk dict))
+    # data = pengeluaran_user
+    # for i in len(data["jumlah_duit"]):
+    #     jumlah += data[i]["jumlah_duit"]
+
+    # for i in range(len(data)):
+    #     jumlah += data[i]["jumlah_duit"] #ada 2 cara, 1 indexing, 2 itu. ambil simpel
+
+    for data in pengeluaran_user:
+        jumlah += data["jumlah_duit"]
+    # pengeluaran_user berisi list yang menyimpan value dict. data pada for in
+    # akan membuat vaiabel sementara yang berisi datanya
+    # pada kasus ini, berarti data adalah valuenya si pengeluaran_user itu list berisi dict
+
+    print(f"total pengeluaran = {jumlah}")
+
+
+def hapus_data():
+    data = pengeluaran_user
+    print("data tersimpan")
+    for i in range(len(data)):
+        hasil = f"{i + 1}. {data[i]['pengeluaran']}"
+        print(hasil)
+
+    user_input = int(input("masukkan data yang ingin dihapus = "))
+    index = user_input - 1
+    hapus = data.pop(index)
+
+    print(f"{hapus['pengeluaran']} berhasil dihapus")
+    print(f"data sekarang :")
+    for i in range(len(data)):
+        hasil = f"{i + 1}. {data[i]['pengeluaran']}"
+        print(hasil)
+
+    # salah
+    # for i in range(len(hasil)):
+    #     splitting = hasil.split('.')
+    #     data_hasil = int(splitting[i])
+    #     user_input = input("masukkan data yang ingin dihapus : ")
+
+    # if user_input == data_hasil:
+    #     hapus = data[data_hasil]
+    #     del data[data_hasil]
+    #     print(f"data {hapus} telah dihapus!")
 
 
 def app_menu():
@@ -55,7 +101,9 @@ def app_menu():
         print("silahkan pilih menu yang diinginkan")
         print("1. tambah pengeluaran")
         print("2. riwayat pengeluaran")
-        print("3. keluar")
+        print("3. hitung total keseluruhan pengeluaran")
+        print("4. hapus data")
+        print("5. keluar")
 
         user_input = int(input("masukkan pilihan = "))
 
@@ -64,6 +112,10 @@ def app_menu():
         elif user_input == 2:
             lihat_pengeluaran()
         elif user_input == 3:
+            hitung_total()
+        elif user_input == 4:
+            hapus_data()
+        elif user_input == 5:
             print("selamat tinggal!")
             break
         else:
