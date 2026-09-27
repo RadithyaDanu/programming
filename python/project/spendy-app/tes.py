@@ -6,13 +6,16 @@ test = [{"nama": "radit",
          "kelas": 99}]
 
 
-for i in range(len(test)):
-    hasil = f"{i + 1}. {test[i]["nama"]}"
+for i, items in enumerate(test):
+    print(f"{i + 1}. {items["nama"]}")
+
+# for i in range(len(test)):
+#     hasil = f"{i + 1}. {test[i]["nama"]}"
 
 
-splitting = hasil.split('.')
-data_hasil = int(splitting[0])
-print(data_hasil)
+# splitting = hasil.split('.')
+# data_hasil = int(splitting[0])
+# print(data_hasil)
 # user_input = input("masukkan data yang ingin dihapus : ")
 
 # if user_input == data_hasil:

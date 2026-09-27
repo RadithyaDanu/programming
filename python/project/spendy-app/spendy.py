@@ -79,6 +79,11 @@ def hapus_data():
     for i in range(len(data)):
         hasil = f"{i + 1}. {data[i]['pengeluaran']}"
         print(hasil)
+        
+    for i, items in enumerate(data):
+        print(f"{i}. {items}")
+        
+        
     try:
         user_input = int(input("masukkan data yang ingin dihapus = "))
         index = user_input - 1

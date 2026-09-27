@@ -101,8 +101,8 @@ class Member:
 class Perpustakaan:
     def __init__(self, nama):
         self.nama = nama
-        self.__koleksi = []  # list of item
-        self.__members = []  # list of member
+        self.__koleksi = []  # list item
+        self.__members = []  # list member
 
     def tambah_item(self, item):
         self.__koleksi.append(item)

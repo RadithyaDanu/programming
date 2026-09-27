@@ -57,85 +57,33 @@ class fitur(menu_utama):
             print(f"{key} : {value}")
         print("================")
 
+    def hitung_total(self):
+        jumlah = 0
+        for data in pengeluaran_user:
+            jumlah += data["jumlah_duit"]
+        print(f"total pengeluaran = {jumlah}")
 
-def tambah_pengeluaran():
-    try:
-        nama_pengeluaran = input("masukkan nama pengeluaran = ")
-        nama_kategori = input("masukkan nama kategori = ")
-        jumlah_uang = int(input("masukkan jumlah uang = "))
-
-        pengeluaran_user.append({
-            "pengeluaran": nama_pengeluaran,
-            "kategori": nama_kategori,
-            "jumlah_duit": jumlah_uang
-        })
-    except ValueError:
-        print("masukkan input yang sesuai!")
-
-
-def lihat_pengeluaran():
-    data_user = pengeluaran_user
-    if not data_user:
-        print("belum ada data!")
-        return
-
-    for data in data_user:
-        for key, value in data.items():
-            print(f"{key} : {value}")
-    print("=====================")
-
-
-def hitung_total():
-    jumlah = 0
-    # data = pengeluaran_user["jumlah_duit"] ((salah krn pengeluaran user itu list, gabisa akses kyk dict))
-    # data = pengeluaran_user
-    # for i in len(data["jumlah_duit"]):
-    #     jumlah += data[i]["jumlah_duit"]
-
-    # for i in range(len(data)):
-    #     jumlah += data[i]["jumlah_duit"] #ada 2 cara, 1 indexing, 2 itu. ambil simpel
-
-    for data in pengeluaran_user:
-        jumlah += data["jumlah_duit"]
-    # pengeluaran_user berisi list yang menyimpan value dict. data pada for in
-    # akan membuat vaiabel sementara yang berisi datanya
-    # pada kasus ini, berarti data adalah valuenya si pengeluaran_user itu list berisi dict
-
-    print(f"total pengeluaran = {jumlah}")
-
-
-def hapus_data():
-    data = pengeluaran_user
-    print("data tersimpan")
-    for i in range(len(data)):
-        hasil = f"{i + 1}. {data[i]['pengeluaran']}"
-        print(hasil)
-    try:
-        user_input = int(input("masukkan data yang ingin dihapus = "))
-        index = user_input - 1
-        hapus = data.pop(index)
-
-        print(f"{hapus['pengeluaran']} berhasil dihapus")
-        print(f"data sekarang :")
+    def hapus_data():
+        data = pengeluaran_user
+        print("data tersimpan")
         for i in range(len(data)):
             hasil = f"{i + 1}. {data[i]['pengeluaran']}"
             print(hasil)
+        try:
+            user_input = int(input("masukkan data yang ingin dihapus = "))
+            index = user_input - 1
+            hapus = data.pop(index)
 
-    except ValueError:
-        print("masukkan input yang sesuai!")
-    except IndexError:
-        print("data tidak ada!")
+            print(f"{hapus['pengeluaran']} berhasil dihapus")
+            print(f"data sekarang :")
+            for i in range(len(data)):
+                hasil = f"{i + 1}. {data[i]['pengeluaran']}"
+                print(hasil)
 
-    # salah
-    # for i in range(len(hasil)):
-    #     splitting = hasil.split('.')
-    #     data_hasil = int(splitting[i])
-    #     user_input = input("masukkan data yang ingin dihapus : ")
-
-    # if user_input == data_hasil:
-    #     hapus = data[data_hasil]
-    #     del data[data_hasil]
-    #     print(f"data {hapus} telah dihapus!")
+        except ValueError:
+            print("masukkan input yang sesuai!")
+        except IndexError:
+            print("data tidak ada!")
 
 
 def app_menu():

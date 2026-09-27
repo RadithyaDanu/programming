@@ -1,0 +1,135 @@
+flexing under pressure
+
+stres adalah cara manusia bereaksi baik secara
+fisik maupun mental terhaap perubaha, peristiwa
+dan situasi dalam kehidupan
+
+DASS-42 (kuesioner self screening)
+https://docs.google.com/document/d/1JrH6lCKEtnmcJVWW4g-SiTxZNnkw64EJYMRHf-jqQRg/edit?usp=sharing&authuser=1
+setelah screening, ke ai pake prompt ini:
+###
+Prompt:
+Tolong buat laporan analisis hasil DASS-42 berdasarkan 42 jawaban saya pada file terlampir. Hitung skor Depression, Anxiety, dan Stress sesuai metode penilaian DASS-42, lalu tentukan kategori masing-masing skor.
+
+Sajikan hasil secara formal, sistematis, dan terstruktur, tetapi keep it short and simple. Gunakan tabel yang berisi aspek, skor, kategori, dan interpretasi singkat. Setelah itu, jelaskan secara singkat pola perasaan, pikiran, respons tubuh, atau perilaku yang terlihat dari jawaban saya untuk membantu saya memahami hasilnya. Jika ada kemungkinan pola yang saling berkaitan, jelaskan secara sederhana, tetapi jangan mengarang penyebab yang tidak terlihat dari jawaban.
+
+Gunakan bahasa Indonesia yang jelas, ringkas, objektif, dan mudah dipahami, tanpa istilah psikologi yang rumit dan tanpa penjelasan yang terlalu panjang.
+
+Terakhir, berikan kesimpulan singkat mengenai hal yang perlu diperhatikan dan kapan sebaiknya mempertimbangkan berkonsultasi dengan psikolog atau tenaga profesional.
+###
+Hasil DASS-42 hanya untuk self-screening, bukan diagnosis medis atau psikologis. Jangan menyimpulkan bahwa saya pasti mengalami gangguan tertentu dan jangan membuat kesimpulan yang tidak didukung oleh 42 jawaban saya.
+3 aspek kondisi emosi:
+1. depression - gejala yang berkaitan dengan mood
+dan kehilangan minat
+2. anxiety - gejala kecemasan dan respons tubuh
+terhadap tekanan
+3. stress - tingkat ketegangan, sulit rileks,
+dan mudah merasa tertekan
+
+pemicu stress:
+FOMO, takut tertinggal informasi atau momen
+yg ada di medsos
+1. financial investemnt
+saham, crypto yg beresiko krn viral
+2. lifestyle
+tekanan gaya hidup dan standar keren masa kondisi
+3. doom scrolling & tren
+takut ketinggalan trend yg bikin doom scrolling
+
+kebalikan fomo adalah jomo
+fomo = fear of missing out
+jomo = joy of missing out
+
+eustress vs distress
+
+distress = stress yang berdampak negatif ke ketinggalan
+seperti cemas, khawatir,  takut salah, dll
+eustress = stress yg berdampak positif kekita
+
+# cara ngelola stress
+manajemen stress:
+    strategi yg dolakukan dalam upaya
+    mengurangi dapak negatif dari stress
+    terhadap kesehatan jasmani dan rohani
+manfaat:
+kualitas tidur membaik
+produktivitas meningkat
+suasana hati lebih baik
+hubugan membaik
+
+mengelola stress dengan 4A
+ubah situasi : 
+- (avoid) hindari penyebab stress:
+    1. belajar bilang tidak
+    2. kurangi to do lifestyle
+    3. batasi diri dari orang lain
+- (alter) modifikasi penyebab stress
+    1. ekspresiin perasaan
+    2. berkompromi
+    3. kelola waktu dengan baik
+ubah reaksi :
+- (adapt) beradaptasi dengan penyebab stress
+       1. look at the big picture
+        alasan bertahan terhadap penyebab stres
+    2. sesuaikan standar
+- (accept) : menerima peyebab stress
+    1. tidak mengendalikan hal diluar kontrol
+    2. car sisi positifnya
+    3. belajar untuk memaafkan
+
+1. mindful movement
+olahraga
+2. mindful eating
+3. mindful sleep & rest
+4. mindful scrolling
+lepas gadget setelah terlalu banyak menggunakan
+lakukan digital detox biar ga bergantung
+
+# adaptabilitas dalam mengelola stres
+seperti bunglonn
+sebelum melakukan sesuatu,kita harus mengobservasi
+sekitar terlebih dahulu
+
+kapasitas indicidu untuk mengubah tindakan, arah
+atau cara untuk menghadapi atau menyelesaikan sesuatu
+membantu kita untuk menyesuaikan diri dengen
+perubahan baru yang berpotensi menimbulkan stres
+
+> keunntungan menjadi orang adaptif:
+1. melewati perubahan kariri dengan lancar
+2. mudah untuk bangkit kembali dari titik terendah
+3. peningkatan nilai diri
+4. bekal jd leader dan negosiasi
+5. bahagia
+
+> cara beradaptasi
+1. cara berinteraksi
+2. cara mencapai
+3. cara belajar
+4. cara bekerja
+5. cara berpikir
+
+> tantangan beradaptasi
+1. perbedaan budaya (culture shock)
+2. karakter individu yang berbebda berdampak
+3. bertemu dengan orang dan lingkungan yang unik
+4. perbedaan bahasa dan gaya berkomunikasi
+5. merindukan lingkungan lama
+
+> sebagai pendatang, apa yg harus dilakuin?
+1. tunjukkan kalo kita menyenangkan
+2.jangan sombong dan buka diri
+3. tunjukin kualitas diri
+4. buat diri senyaman mungkin
+5. jauhkan diri dari hal negatif
+
+
+
+cara menolak pekerjaan:
+1. lakuin/nyebutin k + ps
+ketika ada kerjaan, dan kita gabisa handle 
+yg pertama adalah sampaikan kondisi (makasih atas sampaian tugas
+lalu beritahu kondisi yang kita alami)
+yg kedua propose solution (krn kondisi ini lebih urgent
+, jadi aku prioritasin tugas ini, bolehkah kita propose
+geser ke lain waktu)
