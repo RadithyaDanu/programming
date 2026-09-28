@@ -1,0 +1,4 @@
+decorator adalah cara membungkus  atau memodifikasi behavior dari function atau method yg dibuat
+ditandai dengan simbol @ diikuti nama decorator, ditulis diatas method
+built-in decorators untuk oop dari py:
+1. @staticmehod: utk bikin 
