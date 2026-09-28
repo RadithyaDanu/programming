@@ -12,3 +12,5 @@ mahasiswa1.nim = 231011401920
 mahasiswa1.nama = "Radithya Danutirta"
 print(mahasiswa1.nim)
 print(mahasiswa1.nama)
+
+# jadi mahasiswa1 objectnya, nim dan nama adalah atributnya

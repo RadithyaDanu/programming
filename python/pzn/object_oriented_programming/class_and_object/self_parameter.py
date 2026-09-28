@@ -24,3 +24,7 @@ mahasiswa1 = Mahasiswa()
 mahasiswa1.nama = "Radithya Danutirta"
 mahasiswa1.perkenalan()
 mahasiswa1.halo("radit")
+
+# ini namanya encapsulation
+# membungkus attribute attribute yang sesuai dengan mahasiswa dan juga method2 yg sesuai dgn
+# mahasiswa itu di dalam 1 class

@@ -22,3 +22,7 @@ class Mahasiswa():
 mahasiswa = Mahasiswa()
 print(mahasiswa.nim)
 print(mahasiswa.nama)
+
+# jika kita bikin class attribute, maka semua object yang instansiasi pada class tsb akan
+# memiliki attribute default
+# intinya tiap bikin object dr class, punya attribute default

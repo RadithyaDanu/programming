@@ -1,0 +1,8 @@
+- class adalah blueprint atau cetakan untuk membuat object. (anggep ini pabrik aja untuk bikin object)
+gabisa bikin object kalo gaada class
+
+- object adalah instance(hasil) dari class. hasil produksi dari blueprint classnya. tiap object
+nanti memiliki data dan behavior yang sama strukturnya(strukturnya bukan isi datanya)
+misal punya pabrik mobil bmw (karakteristiknya akan sama : punya warna, roda, pemilik). 
+tapi detail data bisa beda (misal warnanya beda) karakteristik sama tapi valuenya beda
+

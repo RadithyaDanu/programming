@@ -1,0 +1,4 @@
+cara pembuatan nama nama
+1. class names = PascalCase. ex : Mahasiswa, MataPelajaran, KategoriBarang
+2. method names = snake_case. ex : perkenalan(), lari_ke_depan()
+3. attribute names = snake_case
