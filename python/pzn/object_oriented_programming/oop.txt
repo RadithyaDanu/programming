@@ -1,0 +1,44 @@
+oop adalah paradigma dalam pemrgoraman, hampir di semua bahasa
+mengorgansir kode berdasarkan object dan class
+oop cara kita berpikir dalam kehidupan nyata
+- tiap benda memiliki karakteristik(properties) dan kemmapuan(behaviors)
+- contoh mobil:
+    - punya karakteristik : warna, merk, tahun
+    - kemampuan : maju, mundur, belok, rem, klakson
+- dalam oop:
+    - karakteristik : attributes/properties (variable dalam object)
+    - kemampuan : method (function dalam object)
+
+## keuntungan menggunakan oop
+1. data dan behaviors tergabung dalam 1 unit
+    kalo data kita makin besar dan kompleks, data yang memiliki karakteristik akan berceceran(funct, var,dll)
+    kalo pake oop bisa digabung di 1 tempat ini
+
+2. reusable
+    dapat digunakan berkalikali
+
+3. lebih mudah dipahami dan maintenable
+
+4. data protection
+    var ini gabisa diubah, atau gimana lah dijaga(scalable kompleks)
+
+## 4 pilar dalam oop
+1. encapsulation(pembungkusan)
+    menggabungkan data dan method dalam satu unit(class), dan menyembunyikan implementasi
+2. inheritance(pewarisan)
+    saatbikin object bisa bikin object anaknya, bisa warisin attribut atau method atau karakterisitik
+    dari parentnya
+3. polymorphism
+    object yang beda bisa respon call yg sama dgn cara berbeda. bisa bikin banyak jenis(mobil, motor)
+    tapi punya 1 kesamaan yaitu klakson, mobil keluarnya apa dan motor jg
+4. abstraction
+    menyebunyikan kompleksitas dan hanya menampilkan interface yg penting
+    cmn pengen nampilin data yang pengen aja
+
+## real world analogies
+>> pabrik mobil
+1. class = blueprint/cetakan mobil
+2. object = mobil yg dibuat dari blueprint itu
+    jadi kita cukup bikin 1 cetakan class aja bisa cetak object mobil1 mobil2 mobil3 dll
+3. attribute = mesin, warna, roda
+4. behavior = maju, mundur, belok, klakson, rem
