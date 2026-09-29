@@ -1,0 +1,4 @@
+berasal dari bahasa yunani yg berarti banyak bentuk 
+(poly = banyak, morph =  bentuk)
+di oop, polymorphism adalah kemampuan object yang berbeda untuk merespons method call
+yang sama dengan cara yang berbeda
