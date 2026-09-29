@@ -1,5 +1,5 @@
 # parameter self itu sangat penting
-# self adalah parameter khusus yg merujuk pada instance atau object yang sedang manggil methodnya
+# self adalah parameter khusus yg merujuk pada instance/object yang sedang manggil methodnya
 # jadi yang tadi mahasiswa1 kita panggil perkenalan, maka self tersebut adalah mahasiswa1
 # kalo manggil mahasiswa2.perkenalan() maka yg di dalam selfnya adalah mahasiswa2
 # dia tergantung object yang memanggil

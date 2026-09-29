@@ -1,0 +1,295 @@
+# Python Virtual Environment, Library, Dependency, dan Requirements
+
+## 1. Virtual Environment (`venv`)
+
+`venv` digunakan untuk membuat **environment Python yang terpisah untuk setiap project**, sehingga library dan dependency dari satu project tidak bercampur atau saling bentrok dengan project lainnya.
+
+Misalnya:
+
+```text
+project_A/
+├── .venv/
+└── main.py
+
+project_B/
+├── .venv/
+└── main.py
+```
+
+Walaupun kedua project menggunakan Python versi yang sama, masing-masing project dapat memiliki versi library yang berbeda.
+
+### Membuat virtual environment
+
+Masuk ke folder project:
+
+```bash
+cd nama-project
+```
+
+Buat virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+### Mengaktifkan virtual environment
+
+Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+Jika berhasil, biasanya terminal akan menunjukkan:
+
+```text
+(.venv) C:\project>
+```
+
+### Menonaktifkan virtual environment
+
+```bash
+deactivate
+```
+
+---
+
+## 2. `pip`
+
+`pip` adalah package manager Python yang digunakan untuk **meng-install, menghapus, dan meng-update library/package**.
+
+### Install library
+
+```bash
+pip install pandas
+```
+
+Contoh beberapa library:
+
+```bash
+pip install pandas numpy matplotlib
+```
+
+### Update library
+
+```bash
+pip install --upgrade pandas
+```
+
+atau:
+
+```bash
+pip install -U pandas
+```
+
+### Melihat library yang sudah ter-install
+
+```bash
+pip list
+```
+
+### Menghapus library
+
+```bash
+pip uninstall pandas
+```
+
+---
+
+## 3. PyPI
+
+**PyPI (Python Package Index)** adalah tempat online yang menyediakan berbagai package Python.
+
+Ketika menjalankan:
+
+```bash
+pip install pandas
+```
+
+secara sederhana alurnya:
+
+```text
+Kita
+ ↓
+pip install pandas
+ ↓
+PyPI
+ ↓
+Download pandas
+ ↓
+Install ke environment yang sedang aktif
+```
+
+Jika `.venv` sedang aktif, library akan dipasang ke `.venv` project tersebut.
+
+---
+
+## 4. Dependency
+
+**Dependency** adalah package/library lain yang dibutuhkan oleh suatu package agar dapat bekerja.
+
+Contohnya secara sederhana:
+
+```text
+pandas
+├── numpy
+├── python-dateutil
+└── pytz
+```
+
+Ketika menjalankan:
+
+```bash
+pip install pandas
+```
+
+`pip` biasanya akan otomatis meng-install dependency yang dibutuhkan oleh pandas.
+
+---
+
+## 5. `requirements.txt`
+
+`requirements.txt` digunakan untuk **mencatat library dan versi yang dibutuhkan oleh sebuah project**.
+
+Contohnya:
+
+```text
+pandas==2.3.2
+numpy==2.1.0
+matplotlib==3.10.0
+```
+
+Dengan file ini, environment project dapat dibuat kembali di komputer lain dengan dependency yang sama.
+
+### Membuat `requirements.txt`
+
+Setelah library sudah di-install:
+
+```bash
+pip freeze > requirements.txt
+```
+
+Hasilnya kira-kira:
+
+```text
+numpy==2.1.0
+pandas==2.3.2
+matplotlib==3.10.0
+```
+
+### Install semua dependency dari `requirements.txt`
+
+Misalnya project dipindahkan ke komputer lain:
+
+```bash
+python -m venv .venv
+```
+
+Aktifkan:
+
+```bash
+.venv\Scripts\activate
+```
+
+Kemudian:
+
+```bash
+pip install -r requirements.txt
+```
+
+`pip` akan membaca `requirements.txt` dan meng-install package yang tercantum di dalamnya.
+
+---
+
+## 6. Alur lengkap dalam sebuah project
+
+Contoh project baru:
+
+```bash
+mkdir analisis-data
+cd analisis-data
+```
+
+Buat environment:
+
+```bash
+python -m venv .venv
+```
+
+Aktifkan:
+
+```bash
+.venv\Scripts\activate
+```
+
+Install library:
+
+```bash
+pip install pandas numpy matplotlib
+```
+
+Setelah selesai, buat daftar dependency:
+
+```bash
+pip freeze > requirements.txt
+```
+
+Struktur project:
+
+```text
+analisis-data/
+├── .venv/
+├── main.py
+└── requirements.txt
+```
+
+Ketika selesai bekerja:
+
+```bash
+deactivate
+```
+
+---
+
+## 7. Gambaran sederhananya
+
+```text
+PROJECT
+   │
+   ├── .venv
+   │     ↓
+   │   Environment khusus project
+   │
+   ├── pip
+   │     ↓
+   │   Install / update / uninstall package
+   │
+   ├── PyPI
+   │     ↓
+   │   Tempat package Python
+   │
+   └── requirements.txt
+         ↓
+       Catatan package + versinya
+```
+
+### Intinya
+
+```text
+venv
+→ Memisahkan environment setiap project
+
+pip
+→ Meng-install, update, dan menghapus library
+
+PyPI
+→ Tempat package Python diambil
+
+Dependency
+→ Package lain yang dibutuhkan oleh suatu package
+
+requirements.txt
+→ Mencatat package dan versi yang dibutuhkan project
+```
+
+`.venv` biasanya **tidak dimasukkan ke GitHub** karena environment tersebut bisa dibuat kembali. Sebaliknya, `requirements.txt` biasanya dimasukkan ke GitHub agar orang lain dapat membuat environment dengan dependency yang sama.

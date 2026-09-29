@@ -1,0 +1,8 @@
+1. sellau panggil super().__init__() kalo bikin constructor didalam child
+untuk mastiin constructor di parentnya juga terpanggil
+2. hanya override method yang punya behavior yang berbeda, kalo gaperlu gausah buat
+3. pake isinstance() untuk ngecek, 
+4. level inheritance jangan terlalu dalam, cth 3-4 level
+5. jangan override tanpa alesan jelas
+6. jangan buat inheritance yang hierarkinya sangat kompleks
+7. jangan multiple inheritance kalo gaperlu

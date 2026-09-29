@@ -1,0 +1,22 @@
+inheritance adalah kemampuan untuk membuat class baur berdasarkan class yang sudah ada
+class baru yaitu class child, mewarisi dari kelas lama(parent/super class)
+dan bisa menambah atau mengubah functionality
+otomatis saat kita bikin child class/subclass, semua yg dimiliki parentnya (properties, method) otomatis
+dimiliki si childnya
+
+contoh dunia nyata:
+1. kendaraan(parent) > mobil, motor, pesawat (child) 
+2.  hewan(parent) > anjing, kucing, berhubungan
+3.  karyawan(parent) > manager, developer, designer (child)
+
+keuntungan inheritance
+1. code reuse
+gaperlu nulis ulang kode yang sama, semua yg ada di parent otomatis akan dimiliki si childnya
+2. konsisten
+interface dan blueprintnya sama, karena parentnya sama
+3. maintainability
+ngubah parent otomatis berdampak ke semua childnya
+4. extensibility
+mudah menambah tipe baru tanpa harus mengubah banyak kode
+5. polymorphism
+memperlakukan object yang berbeda dengna interface/blueprint yang sama

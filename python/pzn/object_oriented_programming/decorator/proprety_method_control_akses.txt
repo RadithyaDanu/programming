@@ -1,0 +1,4 @@
+salah satu kekurangan attribute adalah kita gabisa kontrol nilai yang dimmasukan atau didapatkan
+kalo pake function bisa kita kontrol krn bisa divalidasi
+banyak yang pake method setter dan getter untuk mengontrol akses ke attributenya
+utk ngubah datanya kita pake set nama datanya, utk mengambil datanya kita pake get data namnaya

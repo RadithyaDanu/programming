@@ -15,7 +15,9 @@ class Mahasiswa():
 
 
 # kalo gapake __str__()
-# dan kita cuma panggil
+# dan kita cuma panggil nama classnya akan terjadi output seperti  ini:
 # <__main__.BankAcc object at 0x000002707B6C6A50>
+# dengan __str__(), kita bisa langsung panggil nama class
+# karena otomatis yang berjalan akan si str itu
 mhs = Mahasiswa("231011401920", "radidthya danutirta")
 print(mhs)

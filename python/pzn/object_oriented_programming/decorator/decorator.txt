@@ -1,4 +1,15 @@
 decorator adalah cara membungkus  atau memodifikasi behavior dari function atau method yg dibuat
 ditandai dengan simbol @ diikuti nama decorator, ditulis diatas method
 built-in decorators untuk oop dari py:
-1. @staticmehod: utk bikin 
+1. @staticmethod: membuat method yg gaperlu self atau cls
+2. @classmethod : membuat class yg jd nerima cls paramter pertama
+3. @property : membuat method yg bisa diakses speerti attribute
+
+d
+## KAPAN PENGGUNAAN MASING MASING?
+1. instance method ketika kita butuh akses ke instance(object)
+    kalo gabutuh kita gaperlu bikin ini
+2. class method :  untuk factory methods(pembuatan instance object) atau operasi pada class leve
+
+3. static method : untuk utility functions yg berhubungan dengan class tapi tidak butuh instance class
+    pake static method kalo gabutuh instance

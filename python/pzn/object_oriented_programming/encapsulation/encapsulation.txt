@@ -1,0 +1,11 @@
+encapsulation adalah prinsip dari oop yang menggabungkan data dan juga method dalam 1 unit atau class
+dan mengontrol akses ke data tsb
+konsepnya gabungin semua data dan method yg berelasi ke dalam 1 class dan dikontrol
+encapsulation seperti kotak aman data penting yang disimpen didalamnya
+
+kenapa penting?
+1. data protection - amanin data, nyegah data diubah sembarangan
+2. data validation - validasi data supaya data sellau dalam kondisi valid
+3. interface control - gimana data bisa diakses
+4. maintain - mudah ngubah internal implementation
+5. security - nyembunyiin detail sensitif

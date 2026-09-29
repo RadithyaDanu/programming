@@ -1,0 +1,3 @@
+constructor adalah sebuah method special yang otomatis dipanggil saat object dibuat
+dala py, constructor adalah nama_method __init__()
+constructor biasanya dipake buat inisialisasi atau setup awal dengan data yg diperlukan

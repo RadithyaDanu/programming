@@ -53,3 +53,4 @@ class Nama:
 
 test = Nama()
 print(test.__name)
+# jadi kalo cuma pengen bisa diakses di class itu sendiri maka pakenya __

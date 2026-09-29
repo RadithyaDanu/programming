@@ -22,3 +22,20 @@ class Mahasiswa():
 mhs1 = Mahasiswa("1234", "radit")
 mhs2 = Mahasiswa("1234", "radit")
 print(mhs1 == mhs2)
+
+# __eq__() digunakan ketika kita membandingkan
+# object menggunakan operator ==.
+#
+# self  -> object pertama
+# other -> object kedua yang dibandingkan
+#
+# Contoh:
+# mhs1 == mhs2
+#
+# Kurang lebih dianggap sebagai:
+# mhs1.__eq__(mhs2)
+#
+# Di sini kita menentukan bahwa 2 mahasiswa
+# dianggap sama jika NIM dan namanya sama.
+
+# masih ada banyak method comparison lain

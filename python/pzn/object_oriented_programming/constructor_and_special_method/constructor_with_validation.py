@@ -17,4 +17,4 @@ class BankAcc:
 
 
 bank = BankAcc("12345", 1)
-print(bank)
+print(bank.norek, bank.saldo)

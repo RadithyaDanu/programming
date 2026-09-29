@@ -25,7 +25,7 @@ class Kendaraan:
 
 class Mobil(Kendaraan):
     def __init__(self, merk, tahun, jumlah_roda):
-        super().__init__(merk, tahun)
+        super().__init__(merk, tahun)  # gaperlu pake self lagi
         self.jumlah_roda = jumlah_roda
 
     def klakson(self):
@@ -44,3 +44,6 @@ print(mobil_radit.jumlah_roda)
 # kalo gapake super dan init doang, nanti method di mobil yg dipanggil bukan kendaraan
 # ini cocok kalo sudah ada di parent dan mau dibuat ulang methodnya
 # kalo childnya gaada ya gaperlu super
+# super().__init__(merk, tahun)
+# sebenarnya seperti memanggil:
+# Kendaraan.__init__(self, merk, tahun)

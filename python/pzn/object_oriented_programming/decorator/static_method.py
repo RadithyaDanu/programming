@@ -13,4 +13,5 @@ class Matematika:
         return a+b
 
 
+# dengan gini, kita gaperlu bikin object dulu, jadi bisa langsung manggil classnya aja
 print(Matematika.tambah(10, 2))
