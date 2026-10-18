@@ -51,3 +51,10 @@ print(df)
 
 df = df.drop_duplicates()
 print(df.head())
+
+
+# kenapa disini ada yang manggil kolom dalam argumen dan sebagai series di awal
+# karena method yang dibuat itu punya tujuan tersendiri ke series atau df
+# jadi ada method yang emang buat series dan juga ada yang buat df
+# kalo pengen ngubah 1 kolom, pake series aja
+# kalo pengen ngubah the whole dataframe, panggil nama kolom di argumen
