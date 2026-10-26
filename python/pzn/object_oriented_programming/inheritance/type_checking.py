@@ -30,3 +30,7 @@ print(isinstance(radit, Karyawan))
 print(isinstance(danu, Karyawan))
 print(isinstance(tirta, Karyawan))
 print(isinstance(raditdanu, Karyawan))
+
+# kenapa true semua?
+# karena memang semuanya adalah instance atau hasil instansiasi dari kelas karyawan
+# walaupun adalah turunannya

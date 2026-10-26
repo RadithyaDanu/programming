@@ -1,0 +1,21 @@
+transaction_id,date,product,category,price,quantity,discount,city
+TR001,2026-06-01,Kaos Kaki Sekolah,School,12000,10,0.05,Bogor
+TR002,2026-06-02,Kaos Kaki Sport,Sport,18000,5,0.00,Jakarta
+TR003,2026-06-03,Kaos Kaki Polos,Casual,15000,8,0.10,Depok
+TR004,2026-06-05,Kaos Kaki Sekolah,School,12000,15,0.05,Bogor
+TR005,2026-06-08,Kaos Kaki Sport,Sport,18000,7,0.00,Jakarta
+TR006,2026-06-10,Kaos Kaki Polos,Casual,15000,4,0.00,Depok
+TR007,2026-07-01,Kaos Kaki Sekolah,School,12000,20,0.10,Bogor
+TR008,2026-07-03,Kaos Kaki Sport,Sport,18000,10,0.05,Jakarta
+TR009,2026-07-05,Kaos Kaki Polos,Casual,15000,12,0.00,Depok
+TR010,2026-07-08,Kaos Kaki Sekolah,School,12000,25,0.05,Bogor
+TR011,2026-07-10,Kaos Kaki Sport,Sport,18000,6,0.00,Jakarta
+TR012,2026-07-12,Kaos Kaki Polos,Casual,15000,9,0.10,Depok
+TR013,2026-08-01,Kaos Kaki Sekolah,School,12000,30,0.10,Bogor
+TR014,2026-08-03,Kaos Kaki Sport,Sport,18000,8,0.00,Jakarta
+TR015,2026-08-05,Kaos Kaki Polos,Casual,15000,10,0.05,Depok
+TR016,2026-08-08,Kaos Kaki Sekolah,School,12000,35,0.05,Bogor
+TR017,2026-08-10,Kaos Kaki Sport,Sport,18000,12,0.10,Jakarta
+TR018,2026-08-12,Kaos Kaki Polos,Casual,15000,15,0.00,Depok
+TR019,2026-08-15,Kaos Kaki Sekolah,School,12000,28,0.00,Bogor
+TR020,2026-08-18,Kaos Kaki Sport,Sport,18000,9,0.05,Jakarta

@@ -29,10 +29,10 @@ class Motor(Kendaraan):
     def klakson(self):
         print(f"motor {self.info()} gapunya klakson")
 
-    @override
     def nyalakan(self):
         print(f"motor {self.merk} dinyalakan otomatis")
-
+#disini kalo dipanggil nyalakan pd motor, maka method nyalakan pada motor yang dijalanin
+# kalo mau jalanin nyalakan dari kendaraan pake super().nyalakan
 
 motor = Motor("zx25r", 2026)
 motor.nyalakan()

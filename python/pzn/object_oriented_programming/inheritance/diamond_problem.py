@@ -28,3 +28,4 @@ class D(B, C):
 
 d = D()
 d.method()
+#outputnya pasti method B. karena B terlebih dahulu di declare pada class D

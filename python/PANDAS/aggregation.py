@@ -14,6 +14,7 @@ print(df.mean(numeric_only=True))  # sum,min,max sm aj
 print(df['Height'].mean())
 
 
+
 # group by
 # mengelompokkan data berdasarkan tipenya, misal dalam 1 kolom ada 3 tipe yaudah gitu
 # kek di sql aja

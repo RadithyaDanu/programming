@@ -40,7 +40,13 @@ print(df)
 # didalam data baru yg dibuat dalam dataframe itu, bisa nambahin new row semau kita
 # kita nyimpen dictnya di dalam list
 new_data = pd.DataFrame([
-                        {"nama": "danu", "age": 18, "job": "engineer"}], index=['4'])
+                        {"nama": "danu", "age": 18, "job": "engineer"}], 
+                    index=['4'])
+# atau
+# new_data = pd.DataFrame({"nama" : ["danu"],
+#                         "age" : ["18"],
+#                           "job" : ["engineer"]})
+# kalo kode itu tinggal masukin aja datanya nnti, kalo kode awal itu bikin object baru lg lebih ribet
 
 # setelah itu kita gabungin sama data awal kita, gabunginnya dalam concat() itu tambahin list
 # jadi concat([]), karena kita mau nambahin data, nah data itu bersifat didalam list

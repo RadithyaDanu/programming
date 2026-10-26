@@ -40,6 +40,7 @@ def main():
             user_milih = int(input("pilih menu : "))
         except ValueError:
             print("mohon masukan input yang valid")
+            continue
         if user_milih not in [1, 2, 3, 4, 5, 6, 7]:
             print("gunakan angka valid!")
             continue

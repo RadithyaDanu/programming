@@ -1,0 +1,34 @@
+🔥 Project: Personal Expense Tracker (CLI)
+
+Lu bikin aplikasi pencatat pengeluaran sederhana di terminal.
+
+Target selesai: 30 menit. Jangan over-engineering dulu.
+
+🎯 Fitur yang harus dibuat
+Tambah pengeluaran.
+Lihat semua pengeluaran.
+Hitung total pengeluaran.
+Keluar dari aplikasi.
+
+=== SPENDY: EXPENSE TRACKER ===
+
+1. Tambah Pengeluaran
+2. Lihat Pengeluaran
+3. Total Pengeluaran
+4. Keluar
+
+Pilih menu: 1
+
+Nama pengeluaran: Makan
+Jumlah: 15000
+
+Pengeluaran berhasil ditambahkan!
+
+Pilih menu: 2
+
+=== DAFTAR PENGELUARAN ===
+1. Makan - Rp15.000
+
+Pilih menu: 3
+
+Total pengeluaran: Rp15.000

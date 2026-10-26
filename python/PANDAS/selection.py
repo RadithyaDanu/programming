@@ -21,7 +21,7 @@ df = pd.read_csv("data.csv", index_col="Name")
 # # df.iloc[0:11:2, 0:3] > startstopstep, lanjut 3 kolom awal yg ditampilin
 
 # input user mencari nama pada dataframe
-
+print(df.head())
 pokemon = input("masukkan nama pokemon : ")
 try:
     print(df.loc[pokemon])
