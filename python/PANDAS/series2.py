@@ -3,6 +3,8 @@ import pandas as pd
 calories = {"day 1": 1700, "day 2 ": 1900, "day 3": 2000}
 
 series = pd.Series(calories)
+series.index.name = "hari"
+series.name = "kalori"
 print(series)
 print(f"series day1 {series['day 1']}")
 # karena dict bersifat key-value, maka gaperlu bikin index di seriesnya
